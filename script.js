@@ -63,7 +63,7 @@ const resetStatus = function() {
     for (let i = 0; i < $guests.length; i++) {
         $guests.eq(i).removeClass('guest-active')
         $guests.eq(i).addClass('guest-inactive')
-        $guests.eq(i).closest('.col-3').find('svg').css('color', 'white')
+        $guests.eq(i).closest('.col-4').find('svg').css('color', 'white')
     }
 }
 
@@ -96,7 +96,7 @@ $('.guest-p').on('click', function(e) {
     resetStatus()
     $(e.target).closest('.guest-p').removeClass('guest-inactive')
     $(e.target).closest('.guest-p').addClass('guest-active')
-    $(e.target).closest('.col-3').find('svg').css('color','#0d6efd')
+    $(e.target).closest('.col-4').find('svg').css('color','#0d6efd')
 })
 
 $('ul').on('click', function(e) {
